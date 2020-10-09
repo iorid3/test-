@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab04</title>
+</head>
+
+<body>
+
+<h3>Learning Forms</h3>
+
+<form method ="post"> 
+    <fieldset>
+      <legend>Personal Info</legend>
+        <label>What is your first name?</label>
+        <input  type ="text" placeholder = "First Name"><br>
+        
+        <br><label>Date you joined BCIT:</label>
+        <br><input type ="text" placeholder = "2020-08-22"><br>
+        
+        <br><label >Select your favorite color:</label>
+        <br><input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+
+        <label >Mail Address:</label>
+        <input type="email" name="email" required>
+        <input type="submit" value="Send" ><br>
+
+        <br><label>Enter a phone number:</label>
+        <input type="tel" name="phone" placeholder="090-10-200" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+        <input type="submit" value="Send" >
+
+      </fieldset>  
+      
+     <h3><label>Is COMP1170 enjoyable</label></h3>
+     
+     <input type="radio" id="inq1" name="num_of_inq" value="1">
+     <label for="inq1">Yes</label>
+     <input type="radio" id="inq2" name="num_of_inq" value="2">
+     <label for="inq2">Sometimes</label>
+     <input type="radio" id="inq3" name="num_of_inq" value="3">
+     <label for="inq3">Not really</label>
+
+     
+     
+     <hr>
+     <h3><label>Why are you taking COMP1170?</label></h3>
+     <input type="checkbox" id="inq4" name="num_of_inq" value="4">
+     <label for="inq4">For fun</label>
+     <input type="checkbox" id="inq5" name="num_of_inq" value="5">
+     <label for="inq5">Because it is required</label>
+     <input type="checkbox" id="inq6" name="num_of_inq" value="6">
+     <label for="inq6">To earn course credit</label>
+     <input type="checkbox" id="inq7" name="num_of_inq" value="7">
+     <label for="inq7">For being job ready</label>
+
+
+
+     <hr>
+     
+     <h3><label for ="labname">What is your favorite topic so far?</label></h3>
+     <select name ="Labname"  id ="labname" multiple size = "4">
+       <option value ="Lab01">Lab 1</option>
+       <option value ="Lab02">Lab 2</option>
+       <option value ="Lab03">Lab 3</option>
+       <option value ="Lab04">Lab 4</option>
+       <option value ="other">Other</option>
+     </select>
+    
+
+    
+     <hr>
+     <h3><label for = "Message">What do you like best about COMP 1170?</label></h3>
+     <textarea id = "Message" name ="message" placeholder ="Describe yourself here... "></textarea>
+     
+     <hr>   
+     <input type="button" value="Send" onclick="location.href='mailto:your@gmail.com'"><br> 
+     
+     <br><input type="reset" value="Reset">  
+
+     
+</form>
+</body>
+</html> 
